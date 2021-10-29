@@ -66,19 +66,7 @@ body {
     cursor: pointer;
 }
 
-.game#lafo {
-    background: /*linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), */ center/980px
-        no-repeat
-        url("https://raw.githubusercontent.com/unknownMusician/LostAndFoundOffice/main/Images/Screenshots/Screenshot%201.png");
-}
-
 .game#quoridor {
-    background: /*linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), */ center/980px
-        no-repeat
-        url("https://raw.githubusercontent.com/unknownMusician/QuoridorDelta/main/Recordings/Screen1.png");
-}
-
-.game#quoridor:hover {
     background: /*linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), */ center/980px
         no-repeat
         url("https://raw.githubusercontent.com/unknownMusician/QuoridorDelta/main/Recordings/movie_003.gif");
@@ -87,23 +75,36 @@ body {
 .game#gachi-bird {
     background: /*linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), */ center/550px
         no-repeat
-        url("https://raw.githubusercontent.com/snyk04/gachi-bird/master/Images/Screenshots/Screenshot%201.png");
-}
-
-.game#gachi-bird:hover {
-    background: /*linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), */ center/550px
-        no-repeat
         url("https://raw.githubusercontent.com/snyk04/gachi-bird/master/Images/Gameplay.gif");
 }
 
-@media (max-width: 1335px) {
+.game#lafo {
+    background: /*linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), */ center/980px
+        no-repeat
+        url("https://raw.githubusercontent.com/unknownMusician/LostAndFoundOffice/main/Images/Screenshots/Screenshot%201.png");
+}
+
+@media (min-width: 1320px) {
+
     .game#quoridor {
+        background: /*linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), */ center/980px
+            no-repeat
+            url("https://raw.githubusercontent.com/unknownMusician/QuoridorDelta/main/Recordings/Screen1.png");
+    }
+
+    .game#quoridor:hover {
         background: /*linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), */ center/980px
             no-repeat
             url("https://raw.githubusercontent.com/unknownMusician/QuoridorDelta/main/Recordings/movie_003.gif");
     }
-    
+
     .game#gachi-bird {
+        background: /*linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), */ center/550px
+            no-repeat
+            url("https://raw.githubusercontent.com/snyk04/gachi-bird/master/Images/Screenshots/Screenshot%201.png");
+    }
+
+    .game#gachi-bird:hover {
         background: /*linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), */ center/550px
             no-repeat
             url("https://raw.githubusercontent.com/snyk04/gachi-bird/master/Images/Gameplay.gif");
