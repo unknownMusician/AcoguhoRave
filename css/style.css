@@ -1,22 +1,26 @@
+:root {
+    --left-padding: min(9vw, 90px);
+}
+
 #header {
     font-size: 38px;
     /*text-align: center;*/
     padding: 19px;
-    padding-left: 50px;
+    padding-left: var(--left-padding);
     background-color: #222229;
     color: #eee;
     font-weight: 700;
 
     border-bottom: 2px solid #555;
 
-    font-family: 'Red Hat Text', sans-serif;
+    font-family: "Red Hat Text", sans-serif;
 }
 
 body {
     font-family: monospace;
     color: #222;
 
-    background: #daeefe /*linear-gradient(to bottom right, #060d2f, #546ccf);*/
+    background: #daeefe; /*linear-gradient(to bottom right, #060d2f, #546ccf);*/
 }
 
 .game {
@@ -30,9 +34,10 @@ body {
     font-size: 50px;
     text-align: center;
     filter: blur(0px);
+    margin: 35px;
     margin-top: 20px;
     margin-bottom: 20px;
-    
+
     box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.5);
 
     backdrop-filter: brightness(60%);
@@ -46,7 +51,8 @@ body {
     justify-content: space-around;
 }
 
-.game:hover{
+.game:hover {
+    margin: 10px;
     padding-top: 180px;
     width: 550px;
     height: 550px;
@@ -54,34 +60,58 @@ body {
     border-radius: 20px;
     transition: ease 0.5s;
     filter: blur(0px);
-    
+
     box-shadow: 1px 1px 50px -5px rgba(0, 0, 0, 0.7);
 
     cursor: pointer;
 }
 
 .game#lafo {
-    background: /*linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), */center/260% no-repeat url("https://raw.githubusercontent.com/unknownMusician/LostAndFoundOffice/main/Images/Screenshots/Screenshot%201.png");
+    background: /*linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), */ center/980px
+        no-repeat
+        url("https://raw.githubusercontent.com/unknownMusician/LostAndFoundOffice/main/Images/Screenshots/Screenshot%201.png");
 }
 
 .game#quoridor {
-    background: /*linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), */center/180% no-repeat url("https://raw.githubusercontent.com/unknownMusician/QuoridorDelta/main/Recordings/Screen1.png");
+    background: /*linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), */ center/980px
+        no-repeat
+        url("https://raw.githubusercontent.com/unknownMusician/QuoridorDelta/main/Recordings/Screen1.png");
 }
 
 .game#quoridor:hover {
-    background: /*linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), */center/180% no-repeat url("https://raw.githubusercontent.com/unknownMusician/QuoridorDelta/main/Recordings/movie_003.gif");
+    background: /*linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), */ center/980px
+        no-repeat
+        url("https://raw.githubusercontent.com/unknownMusician/QuoridorDelta/main/Recordings/movie_003.gif");
 }
 
 .game#gachi-bird {
-    background: /*linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), */center/100% no-repeat url("https://raw.githubusercontent.com/snyk04/gachi-bird/master/Images/Screenshots/Screenshot%201.png");
+    background: /*linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), */ center/550px
+        no-repeat
+        url("https://raw.githubusercontent.com/snyk04/gachi-bird/master/Images/Screenshots/Screenshot%201.png");
 }
 
 .game#gachi-bird:hover {
-    background: /*linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), */center/100% no-repeat url("https://raw.githubusercontent.com/snyk04/gachi-bird/master/Images/Gameplay.gif");
+    background: /*linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), */ center/550px
+        no-repeat
+        url("https://raw.githubusercontent.com/snyk04/gachi-bird/master/Images/Gameplay.gif");
+}
+
+@media (max-width: 1335px) {
+    .game#quoridor {
+        background: /*linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), */ center/980px
+            no-repeat
+            url("https://raw.githubusercontent.com/unknownMusician/QuoridorDelta/main/Recordings/movie_003.gif");
+    }
+    
+    .game#gachi-bird {
+        background: /*linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), */ center/550px
+            no-repeat
+            url("https://raw.githubusercontent.com/snyk04/gachi-bird/master/Images/Gameplay.gif");
+    }
 }
 
 #games {
-    margin: 90px;
+    margin: var(--left-padding);
     margin-top: 0px;
     padding-top: 20px;
     display: flex;
@@ -93,7 +123,7 @@ body {
 }
 
 #about {
-    margin: 90px;
+    margin: var(--left-padding);
     margin-top: 30px;
     padding: 50px;
     font-size: 30px;
@@ -101,11 +131,11 @@ body {
     background-color: #fff;
     border: 1px solid #888;
     border-radius: 10px;
-    
+
     box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.3);
 }
 
-.writing#about::after{
+.writing#about::after {
     content: "";
 
     animation-duration: 0.5s;
@@ -121,21 +151,21 @@ body {
     50% {
         content: "|";
     }
-  
+
     to {
         content: "";
     }
-  }
+}
 
 .header {
-    font-family: 'Red Hat Text', sans-serif;
+    font-family: "Red Hat Text", sans-serif;
     border-bottom: 1px solid #888;
 
     display: inline-flexbox;
 
     margin-top: 90px;
-    margin-left: 90px;
-    margin-right: 90px;
+    margin-left: var(--left-padding);
+    margin-right: var(--left-padding);
     font-size: 40px;
     font-weight: lighter;
 }
