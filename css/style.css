@@ -22,11 +22,8 @@ body {
 
     background: #daeefe; /*linear-gradient(to bottom right, #060d2f, #546ccf);*/
 }
-
 .game {
     /*padding-top: 200px;*/
-    padding-left: 50px;
-    padding-right: 50px;
     width: 500px;
     height: 500px;
     color: white;
@@ -34,7 +31,7 @@ body {
     font-size: 50px;
     text-align: center;
     filter: blur(0px);
-    margin: 35px;
+    margin: 5px;
     margin-top: 20px;
     margin-bottom: 20px;
 
@@ -49,6 +46,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+
+@media (min-width: 1320px) {
+    .game {
+        margin: 35px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 }
 
 .game:hover {
@@ -85,7 +90,6 @@ body {
 }
 
 @media (min-width: 1320px) {
-
     .game#quoridor {
         background: /*linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), */ center/980px
             no-repeat
